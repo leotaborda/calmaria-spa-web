@@ -1,19 +1,4 @@
-// Variáveis
-// Cores
-$cor-primaria: #0c0421;
-$cor-secundaria: #4e75ff;
-$cor-terciaria: #85a0ff;
-$cor-quaternaria: #e8f5c8;
-$cor-default: #cad4fa;
-$gradiente-primario: linear-gradient(180deg, #e8f5c8 0%, #ffffff 96.87%);
-$gradiente-secundario: linear-gradient(
-  180deg,
-  rgba(255, 255, 255, 0.7) 0%,
-  rgba(202, 212, 250, 0.3) 100%
-);
-//Fontes
-$ft-textos: "Montserrat", sans-serif;
-$ft-titulos: "Krona One", sans-serif;
+@use './abstract/variables';
 
 body {
   margin: 0;
@@ -22,7 +7,7 @@ body {
 }
 
 header {
-  background: $gradiente-primario;
+  background: variables.$gradiente-primario;
   padding: 2rem;
 
   nav {
@@ -46,9 +31,9 @@ header {
 
       a {
         text-decoration: none;
-        color: $cor-primaria;
+        color: variables.$cor-primaria;
         font-weight: 500;
-        font-family: $ft-textos;
+        font-family: variables.$ft-textos;
       }
     }
   }
@@ -66,22 +51,22 @@ header {
 
         h1 {
             font-size: 42px;
-            color: $cor-primaria;
+            color: variables.$cor-primaria;
             margin-bottom: 2rem;
-            font-family: $ft-titulos;
+            font-family: variables.$ft-titulos;
 
             span {
-                color: $cor-secundaria;
+                color: variables.$cor-secundaria;
             }
         }
 
         button {
-            background-color: $cor-secundaria;
+            background-color: variables.$cor-secundaria;
             color: white;
             border-radius: 1000px;
             width: 280px;
             height: 66px;
-            font-family: $ft-textos;
+            font-family: variables.$ft-textos;
             font-weight: 500;
             font-size: 22px;
             border: none;
