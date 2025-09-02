@@ -1,0 +1,24 @@
+@use "../abstract/variables";
+@use "../abstract/mixins";
+
+#desconto {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  text-align: center;
+
+  h4 {
+    @include mixins.ff-fs-cl(
+      variables.$ft-titulos,
+      1.6rem,
+      variables.$cor-primaria
+    );
+  }
+  p {
+    @include mixins.ff-fs-cl(
+      variables.$ft-textos,
+      1.2rem,
+      variables.$cor-primaria
+    );
+  }
+}
