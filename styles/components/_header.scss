@@ -1,5 +1,5 @@
-@use '../abstract/variables';
-@use '../abstract/mixins';
+@use "../abstract/variables";
+@use "../abstract/mixins";
 
 header {
   background: variables.$gradiente-primario;
@@ -26,9 +26,17 @@ header {
 
       a {
         text-decoration: none;
-        color: variables.$cor-primaria;
+        @include mixins.ff-fs-cl(
+          variables.$ft-textos,
+          1rem,
+          variables.$cor-primaria
+        );
         font-weight: 500;
-        font-family: variables.$ft-textos;
+        transition: font-weight .15s ease;
+
+        &:hover {
+          font-weight: 600;
+        }
       }
     }
   }
@@ -41,43 +49,43 @@ header {
     justify-content: space-between;
 
     .textos-home {
-        max-width: 474px;
+      max-width: 474px;
 
-        h1 {
-            font-size: 42px;
-            color: variables.$cor-primaria;
-            margin-bottom: 2rem;
-            font-family: variables.$ft-titulos;
+      h1 {
+        font-size: 42px;
+        color: variables.$cor-primaria;
+        margin-bottom: 2rem;
+        font-family: variables.$ft-titulos;
 
-            span {
-                color: variables.$cor-secundaria;
-            }
+        span {
+          color: variables.$cor-secundaria;
         }
+      }
 
-        button {
-            background-color: variables.$cor-secundaria;
-            color: white;
-            border-radius: 1000px;
-            width: 280px;
-            height: 66px;
-            font-family: variables.$ft-textos;
-            font-weight: 500;
-            font-size: 22px;
-            border: none;
-            transition: background-color .15s ease;
+      button {
+        background-color: variables.$cor-secundaria;
+        color: white;
+        border-radius: 1000px;
+        width: 280px;
+        height: 66px;
+        font-family: variables.$ft-textos;
+        font-weight: 500;
+        font-size: 22px;
+        border: none;
+        transition: background-color 0.15s ease;
 
-            &:hover {
-                background-color: #2c51d6;
-            }
+        &:hover {
+          background-color: #2c51d6;
         }
+      }
     }
 
     .img-home {
-        max-width: 474px;
+      max-width: 474px;
 
-        img {
-            width: 100%;
-        }
+      img {
+        width: 100%;
+      }
     }
   }
 }
