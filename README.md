@@ -75,7 +75,3 @@ Você pode acessar o projeto online através do seguinte link: [calmaria-spa-web
 ## Contribuições
 
 Contribuições são sempre bem-vindas! Se você tiver alguma sugestão de melhoria ou encontrar algum bug, por favor, abra uma *issue* ou envie um *pull request*.
-
-## Créditos
-
-Este projeto foi desenvolvido com base nos conhecimentos adquiridos no curso "SASS e CSS: estilizando um site" da Alura, ministrado pelo instrutor Diego Carlos Martins Gayoso.
