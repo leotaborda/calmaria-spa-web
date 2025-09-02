@@ -1,0 +1,91 @@
+@use "../abstract/variables";
+@use "../abstract/mixins";
+
+header {
+  background: variables.$gradiente-primario;
+  padding: 2rem;
+
+  nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.6rem;
+
+    .linha {
+      border-top: 1px solid black;
+      width: 80%;
+    }
+
+    ul {
+      display: inline-flex;
+      gap: 2rem;
+
+      li {
+        list-style-type: none;
+      }
+
+      a {
+        text-decoration: none;
+        @include mixins.ff-fs-cl(
+          variables.$ft-textos,
+          1rem,
+          variables.$cor-primaria
+        );
+        font-weight: 500;
+        transition: font-weight .15s ease;
+
+        &:hover {
+          font-weight: 600;
+        }
+      }
+    }
+  }
+
+  #home {
+    max-width: 1040px;
+    @include mixins.margin-center(80);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .textos-home {
+      max-width: 474px;
+
+      h1 {
+        font-size: 42px;
+        color: variables.$cor-primaria;
+        margin-bottom: 2rem;
+        font-family: variables.$ft-titulos;
+
+        span {
+          color: variables.$cor-secundaria;
+        }
+      }
+
+      button {
+        background-color: variables.$cor-default;
+        color: white;
+        border-radius: 1000px;
+        width: 280px;
+        height: 66px;
+        font-family: variables.$ft-textos;
+        font-weight: 500;
+        font-size: 22px;
+        border: none;
+        transition: background-color 0.15s ease;
+
+        &:hover {
+          background-color: variables.$cor-secundaria;
+        }
+      }
+    }
+
+    .img-home {
+      max-width: 474px;
+
+      img {
+        width: 100%;
+      }
+    }
+  }
+}

@@ -1,0 +1,30 @@
+@use "../abstract/variables";
+@use "../abstract/mixins";
+
+footer {
+  @include mixins.margin-center(100%);
+  background-color: variables.$cor-quaternaria;
+  padding: 1rem;
+  height: 50px;
+  margin-top: 4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  small {
+    @include mixins.ff-fs-cl(
+      variables.$ft-textos,
+      1rem,
+      variables.$cor-primaria
+    );
+    font-weight: 500;
+  }
+
+  #year {
+    font-weight: bold;
+  }
+
+  .copyright {
+    @extend #year
+  }
+}
