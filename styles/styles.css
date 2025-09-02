@@ -30,4 +30,45 @@ header nav ul a {
   color: #0c0421;
   font-weight: 500;
   font-family: "Montserrat", sans-serif;
+}
+header #home {
+  max-width: 1040px;
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+header #home .textos-home {
+  max-width: 474px;
+}
+header #home .textos-home h1 {
+  font-size: 42px;
+  color: #0c0421;
+  margin-bottom: 2rem;
+  font-family: "Krona One", sans-serif;
+}
+header #home .textos-home h1 span {
+  color: #4e75ff;
+}
+header #home .textos-home button {
+  background-color: #4e75ff;
+  color: white;
+  border-radius: 1000px;
+  width: 280px;
+  height: 66px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 22px;
+  border: none;
+  transition: background-color 0.15s ease;
+}
+header #home .textos-home button:hover {
+  background-color: #2c51d6;
+}
+header #home .img-home {
+  max-width: 474px;
+}
+header #home .img-home img {
+  width: 100%;
 }/*# sourceMappingURL=styles.css.map */
