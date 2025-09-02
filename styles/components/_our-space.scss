@@ -1,0 +1,5 @@
+@use '../abstract/mixins';
+
+#nosso-espaco {
+    @include mixins.margin-center(80%);
+}
